@@ -13,9 +13,12 @@ exclude = []
 tokio = { version = "1.39.2", features = ["full"] }
 tracing = "0.1"
 tracing-subscriber = "0.3.0"
+hyper = { version = "1.4", features = ["full"] }
+hyper-util = { version = "0.1", features = ["full"] }
 warp = "0.3"
 clap = { version = "4.5.15", features = ["derive"] }
 diesel = { version = "2.2.2", features = ["sqlite"] }
+serde = "1.0"
 serde_json = "1.0"
 whatlang = "0.16.4"
 
