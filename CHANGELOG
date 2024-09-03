@@ -20,6 +20,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - v1.1 Ukrainian translation.
 -->
 
+## [0.2.0] - 2024-09-01
+
+### Added
+- Add the server base code(server, router, error handler).
+- Add the config loader.
+- Add the logging system initializer.
+
 ## [0.1.1] - 2024-09-01
 
 ### Added
