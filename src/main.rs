@@ -12,7 +12,7 @@ async fn main() -> anyhow::Result<()> {
 
     let _guard = Logger::init(config.cargo_env);
 
-    let database = Database::connect(&config.database_url, config.run_migrations)
+    let database = Database::connect(&config.database_url)
         .await
         .expect("Could not establish a database connection.");
 
