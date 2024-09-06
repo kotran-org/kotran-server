@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kotran", "src\Kotran\Kotran.csproj", "{17A3D962-746B-4DF7-B56F-A3E78E4C57EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{13741156-0819-4A27-B99A-4AF0EA1A3B09} = {13741156-0819-4A27-B99A-4AF0EA1A3B09}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotran.Engine", "src\Kotran.Engine\Kotran.Engine.csproj", "{13741156-0819-4A27-B99A-4AF0EA1A3B09}"
 EndProject

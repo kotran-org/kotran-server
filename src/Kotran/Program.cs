@@ -1,10 +1,24 @@
-﻿namespace Kotran
+﻿using GenHTTP.Engine;
+using GenHTTP.Modules.Practices;
+
+namespace Kotran
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var project = Project.Setup();
+
+            return Host.Create()
+                       .Handler(project)
+                       .Defaults()
+                       .Console()
+            //-:cnd:noEmit
+            #if DEBUG
+                       .Development()
+            #endif
+            //+:cnd:noEmit
+                       .Run();
         }
     }
 }
