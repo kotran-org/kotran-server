@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kotran", "src\Kotran\Kotran.csproj", "{17A3D962-746B-4DF7-B56F-A3E78E4C57EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotran.Engine", "src\Kotran.Engine\Kotran.Engine.csproj", "{13741156-0819-4A27-B99A-4AF0EA1A3B09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source Codes", "Source Codes", "{7A25ECA5-1BC8-4373-A4FE-DF45CAD253AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{41BBA576-C294-4494-9CC4-1218453FA6A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotran.Benchmarks", "tests\Kotran.Benchmarks\Kotran.Benchmarks.csproj", "{18B3AAA3-1ECC-4665-A263-D5D3CAF970CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotran.Tests", "tests\Kotran.Tests\Kotran.Tests.csproj", "{104396DA-CE1D-4FC7-9CE4-F597342E7BC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17A3D962-746B-4DF7-B56F-A3E78E4C57EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A3D962-746B-4DF7-B56F-A3E78E4C57EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A3D962-746B-4DF7-B56F-A3E78E4C57EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A3D962-746B-4DF7-B56F-A3E78E4C57EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13741156-0819-4A27-B99A-4AF0EA1A3B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13741156-0819-4A27-B99A-4AF0EA1A3B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13741156-0819-4A27-B99A-4AF0EA1A3B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13741156-0819-4A27-B99A-4AF0EA1A3B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B3AAA3-1ECC-4665-A263-D5D3CAF970CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B3AAA3-1ECC-4665-A263-D5D3CAF970CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B3AAA3-1ECC-4665-A263-D5D3CAF970CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B3AAA3-1ECC-4665-A263-D5D3CAF970CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104396DA-CE1D-4FC7-9CE4-F597342E7BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104396DA-CE1D-4FC7-9CE4-F597342E7BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104396DA-CE1D-4FC7-9CE4-F597342E7BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104396DA-CE1D-4FC7-9CE4-F597342E7BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17A3D962-746B-4DF7-B56F-A3E78E4C57EB} = {7A25ECA5-1BC8-4373-A4FE-DF45CAD253AB}
+		{13741156-0819-4A27-B99A-4AF0EA1A3B09} = {7A25ECA5-1BC8-4373-A4FE-DF45CAD253AB}
+		{18B3AAA3-1ECC-4665-A263-D5D3CAF970CF} = {41BBA576-C294-4494-9CC4-1218453FA6A9}
+		{104396DA-CE1D-4FC7-9CE4-F597342E7BC1} = {41BBA576-C294-4494-9CC4-1218453FA6A9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {210930DB-5C24-40CA-A88B-A2C677178472}
+	EndGlobalSection
+EndGlobal
