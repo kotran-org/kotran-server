@@ -8,7 +8,7 @@ pub struct FilterGroup {
     pub id: i32,
     pub name: String,
     pub desc: String,
-    pub priority: i32, // 0 : Pre / 1 : Post
+    pub priority: i8, // 0 : Pre / 1 : Post
     pub from_lang: String,
     pub to_lang: String,
     pub ignore: bool

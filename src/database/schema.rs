@@ -105,8 +105,7 @@ diesel::table! {
         id -> Nullable<Integer>,
         user_id -> Integer,
         perm_name -> Text,
-        perm_type -> Integer,
-        perm_level -> Integer,
+        perm_action -> Text,
     }
 }
 

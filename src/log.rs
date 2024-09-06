@@ -2,24 +2,24 @@ use std::{panic, thread};
 use tracing::{error, level_filters::LevelFilter};
 use tracing_appender::non_blocking::WorkerGuard;
 
-use crate::OperatingEnvironment;
+use crate::SystemEnvironment;
 
 pub struct Logger {}
 
 impl Logger {
-    pub fn init(op_env: OperatingEnvironment) -> WorkerGuard {
+    pub fn init(op_env: SystemEnvironment) -> WorkerGuard {
         let file_logger = tracing_appender::rolling::daily("logs", "daily.log");
         let console_logger = std::io::stdout();
 
         // Note : Update the log level filter for own use.
         let max_level = match op_env {
-            OperatingEnvironment::Development => LevelFilter::TRACE,
-            OperatingEnvironment::Production => LevelFilter::DEBUG,
+            SystemEnvironment::Development => LevelFilter::TRACE,
+            SystemEnvironment::Production => LevelFilter::DEBUG,
         };
 
         let (non_blocking, guard) = match op_env {
-            OperatingEnvironment::Development => tracing_appender::non_blocking(console_logger),
-            OperatingEnvironment::Production => tracing_appender::non_blocking(file_logger),
+            SystemEnvironment::Development => tracing_appender::non_blocking(console_logger),
+            SystemEnvironment::Production => tracing_appender::non_blocking(file_logger),
         };
 
         tracing_subscriber::fmt()

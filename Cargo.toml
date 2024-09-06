@@ -17,7 +17,7 @@ axum = { version = "0.7.5", features = ["tower-log"] }
 axum-extra = { version = "0.9.3", features = ["cookie"] }
 backtrace = "0.3"
 clap = { version = "4.5.16", features = ["derive", "env"] }
-diesel = { version = "2.2.3", features = ["sqlite"] }
+diesel = { version = "2.2.3", features = ["sqlite", "returning_clauses_for_sqlite_3_35", "numeric", "r2d2"] }
 dotenvy = "0.15.7"
 http-body = "1.0.1"
 lazy_static = "1.5.0"

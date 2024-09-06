@@ -1,17 +1,18 @@
 use anyhow::{Context, Ok};
-use diesel::{prelude::*, sqlite::Sqlite};
+use diesel::{prelude::*, r2d2::{ConnectionManager, Pool, PooledConnection}, SqliteConnection};
 use tracing::info;
 
-/// SQLite database
+pub type ConnectionPool = Pool<ConnectionManager<SqliteConnection>>;
+
 pub struct Database {
-    pub connection: SqliteConnection,
+    pub pool: ConnectionPool,
 }
 
 impl Database {
-    pub async fn connect(database_url: &str) -> anyhow::Result<Self> {
-        let connection = SqliteConnection::establish(&database_url)
-            .context(format!("Failed to connect to \'{}\'", database_url))?;
+    pub async fn establish_connection_pool(database_url: &str) -> anyhow::Result<Self> {
+        let manager = ConnectionManager::<SqliteConnection>::new(database_url);
+        let pool = Pool::builder().build(manager).expect("Failed to create a connection pool.");
 
-        Ok(Self { connection })
+        Ok(Self { pool })
     }
 }

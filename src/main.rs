@@ -10,9 +10,9 @@ async fn main() -> anyhow::Result<()> {
 
     let config = Arc::new(Config::parse());
 
-    let _guard = Logger::init(config.cargo_env);
+    let _guard = Logger::init(config.sys_env);
 
-    let database = Database::connect(&config.database_url)
+    let database = Database::establish_connection_pool(&config.database_url)
         .await
         .expect("Could not establish a database connection.");
 

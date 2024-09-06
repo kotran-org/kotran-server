@@ -104,7 +104,6 @@ CREATE TABLE user_permission (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER NOT NULL,
     perm_name TEXT NOT NULL,
-    perm_type INTEGER NOT NULL,
-    perm_level INTEGER NOT NULL,
+    perm_action TEXT NOT NULL,
     FOREIGN KEY (user_id) REFERENCES user_account(id) ON DELETE CASCADE
 );

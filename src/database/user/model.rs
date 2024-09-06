@@ -27,6 +27,5 @@ pub struct UserPermission {
     pub id: i32,
     pub user_id: i32,
     pub perm_name: String,
-    pub perm_type: String,
-    pub perm_level: i64
+    pub perm_action: String,
 }
