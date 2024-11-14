@@ -11,7 +11,7 @@
     <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.19.2" />
     <PackageReference Include="Microsoft.ML.OnnxRuntime.DirectML" Version="1.19.2" />
     <PackageReference Include="Microsoft.ML.OnnxRuntime.Gpu" Version="1.19.2" />
-    <PackageReference Include="Microsoft.ML.Tokenizers" Version="0.21.1" />
+    <PackageReference Include="Microsoft.ML.Tokenizers" Version="1.0.0" />
     <PackageReference Include="NTextCat" Version="0.3.65" />
   </ItemGroup>
 
